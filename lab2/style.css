@@ -1,0 +1,35 @@
+.header {
+    color: rgb(97, 181, 93);
+    padding: 20px 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    background-image: url(https://hi-news.ru/wp-content/uploads/2019/04/Culture_Matrix_DigitalRain-750x563.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(6, 6, 6);
+    background-color: rgb(97, 181, 93);
+    height: 100%;
+}
+.main{
+    flex: 1 1 auto;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    color: rgb(97, 181, 93);
+    font-size: 0.85rem;
+    background-image: url(https://hi-news.ru/wp-content/uploads/2019/04/Culture_Matrix_DigitalRain-750x563.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    margin-top: 20px;
+}

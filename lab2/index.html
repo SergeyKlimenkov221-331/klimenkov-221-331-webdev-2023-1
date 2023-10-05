@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Форма обратной связи</title>
+</head>
+<div id="wrap">
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <h1>Форма обратной связи</h1>
+
+            </header>
+            <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
+
+                <input type="hidden" name="user_id" value="5">
+
+                <div>
+                    <label for="fio">ФИО</label>
+                    <input type="text" id="fio" name="fio" placeholder="Введите ФИО" value="Иванов Иван Иванович">
+                </div>
+
+                <div>
+                    <label for="email">Электронная почта</label>
+                    <input type="email" id="email" name="email" placeholder="Введите почту" value="ivanov@mail.ru"
+                        required>
+                </div>
+
+                <p>
+                    <legend>Как вы о нас узнали?</legend>
+                </p>
+                <fieldset>
+                    <div>
+                        <input type="radio" name="source" id="friend" value="friend" checked>
+                        <label for="friend">Знакомые</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="source" id="ad" value="ad">
+                        <label for="ad">Реклама</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="source" id="net" value="net">
+                        <label for="ad">Интернет</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="type">Тип обращения</label>
+                    <select name="type" id="type">
+                        <option value="1">Проблема</option>
+                        <option value="2" selected>Рекомендация</option>
+                        <option value="3" selected>Отзыв</option>
+                    </select>
+                </div>
+
+                <legend for="msg">Сообщение</legend>
+                <div>
+                    <textarea name="msg" id="msg">Введите текст </textarea>
+                </div>
+
+                <div>
+                    <label for="at">Вложение</label>
+                    <input type="file" name="at" id="at">
+                </div>
+
+                <div>
+                    <input type="checkbox" name="agree" id="agree" value="agree" required checked>
+                    <label for="agree">Согласен с правилами обработки персональных данных.</label>
+                </div>
+
+                <button type="submit">Отправить</button>
+            </form>
+            <footer class="footer">
+
+                <p>&copy; Клименков С.Е.</p>
+                <p>Git: SergeyKlimenkov221-331</p>
+                <p>Location: Russia,Moscow</p>
+
+            </footer>
+        </div>
+    </body>
+</div>
+
+</html>
