@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exam_Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="bg-success  text-dark bg-opacity-50">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-success bg-gradient text-dark ">
+            <div class="container-fluid">
+                <div class="col-lg-3 text-nowrap ms-4">
+                    <img src="images/logo.jpg" alt="Логотип сайта" width="90" height="60">
+                    <span class="fs-4 mx-3">Moscow Moments</span>
+                </div>
+
+                <div class="col-lg-3 me-4">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Переключатель навигации">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link fs-4 mx-3" href="#">Личный кабинет</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+    <div class="conteiner">
+        <div class="row justify-content-around align-items-center">
+
+            <div class="col-lg-6 col-sm-9">
+                <img src="images/msk.jpg" alt="main-info-img" class="mt-3 p-2 img-fluid rounded-4">
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <h2 class="mt-5 mx-5 mb-3 text-success">Добро пожаловать на Moscow Moments
+                </h2>
+                <p class=" mx-5 mb-3">
+                    Добро пожаловать в уникальные экскурсии по Москве! Исследуйте историю,
+                    архитектуру, культуру и природные красоты города вместе с нами. От исторических
+                    мест до современных достопримечательностей, наши опытные гиды сделают ваше путешествие
+                    незабываемым. Погрузитесь в атмосферу города и откройте для себя его уникальные черты.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-around align-items-center">
+
+            <div class="col-lg-6 col-sm-9">
+                <img src="images/arbat.jpg" alt="main-info-img" class="mt-3 p-2 img-fluid rounded-4">
+            </div>
+
+            <div class="col-lg-6 col-sm-12">
+                <h2 class="mt-5 mx-5 mb-3 text-success">Немного о турах</h2>
+                <p class="mx-5 mb-3">
+                    Пешие туры по Москве предоставляют возможность погрузиться в уникальную атмосферу города и
+                    исследовать его достопримечательности
+                    пешком. Прогулки ведут к историческим местам, таким как Красная площадь, Кремль, Арбат, и другим
+                    увлекательным местам, позволяя
+                    посетителям увидеть Москву глазами местных жителей. Приятный бонус - возможность насладиться
+                    удивительной архитектурой,
+                    остановиться у местных лавочек и кафе и окунуться в атмосферу знаменитого русского гостеприимства.
+                    Экскурсии обеспечиваются
+                    опытными гидами, которые делятся знаниями и анекдотами о Московской истории и культуре.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-around align-items-center">
+
+            <div class="col-lg-6 col-sm-12 ">
+                <h2 class="mt-5 mx-5 mb-3 text-success">Готовы к прогулке?</h2>
+                <p class="mx-5 mb-3">
+                    Забронируйте незабываемую прогулку по Москве с агенством Moscow Moments прямо сейчас или в нашем
+                    офисе!
+                </p>
+            </div>
+
+            <div class="col-lg-6 col-sm-9">
+                <div id="map" class="mt-5" style="height: 35vh;"></div>
+            </div>
+        </div>
+
+        <div class="conteiner bg-success bg-gradient">
+
+            <div class="row justify-content-around align-items-center">
+                <div class="col-lg-6 col-sm-12">
+                    <h2 class="mt-5 mx-5 mb-3 text-dark">Список маршрутов</h2>
+                </div>
+                <div class="page-of-pages">
+                </div>
+                <div class="inputs my-3 d-flex flex-column flex-sm-row">
+                    <div class="input-group input-group-find">
+                        <input id="find-route-input" type="text" class="form-control" placeholder="Поиск по названию"
+                            aria-label="" aria-describedby="find-route">
+                        <button class="btn btn-outline text-light bg-dark" type="button" id="find-route-btn">Найти</button>
+                    </div>
+                    <div class="input-group ms-5 w-25">
+                        <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                            placeholder="Основной объект">
+                        <button class="btn btn-outline text-light bg-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"></button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container ">
+                <div class="row justify-content-around align-items-center">
+                    <div class="col-12">
+                        <a class="mt-5 mx-5 mb-3 text-dark">@Moscow Moments</a>
+                        <a class="mt-5 mx-5 mb-3 text-dark">+79772458495</a>
+                        <a class="mt-5 mx-5 mb-3 text-dark" href="https://mail.ru">MoscowMoments@mail.ru</a>
+                        <a class="mt-5 mx-5 mb-3 text-dark" href="https://mail.ru">supportMM@mail.ru</a>
+                        <a class="mt-5 mx-5 mb-3 text-dark">Russia, Moscow, st.Andropova 7 .</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+        <script>
+            DG.then(function () {
+                var map = DG.map('map', {
+                    center: [55.7558, 37.6176],
+                    zoom: 13
+                });
+            });
+        </script>
+</body>
+
+</html>
